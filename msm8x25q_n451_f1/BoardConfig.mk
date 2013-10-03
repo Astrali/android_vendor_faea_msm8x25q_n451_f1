@@ -27,3 +27,16 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 TARGET_PREBUILT_KERNEL := device/faea/msm8x25q_n451_f1/kernel
 
 BOARD_HAS_NO_SELECT_BUTTON := true
+
+
+###############################################
+##        added - from huawei c8813q         ##
+###############################################
+DEVICE_RESOLUTION := 720x1280
+#BOARD_USES_MMCUTILS := true
+#BOARD_HAS_LARGE_FILESYSTEM := true
+#BOARD_HAS_NO_MISC_PARTITION := true
+TARGET_RECOVERY_PIXEL_FORMAT := "RGB_565"
+BOARD_USE_CUSTOM_RECOVERY_FONT:= \"roboto_23x41.h\"
+
+TARGET_RECOVERY_INITRC := device/faea/msm8x25q_n451_f1/recovery/recovery.rc

@@ -15,7 +15,20 @@ else
 endif
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_KERNEL):kernel
+    $(LOCAL_KERNEL):kernel \
+    $(LOCAL_PATH)/root/charger:recovery/root/charger \
+    $(LOCAL_PATH)/root/fstab.msm7627a:recovery/root/fstab.msm7627a \
+    $(LOCAL_PATH)/root/fstab.nand.msm7627a:recovery/root/fstab.nand.msm7627a \
+    $(LOCAL_PATH)/root/fstab.qcom:recovery/root/fstab.qcom \
+    $(LOCAL_PATH)/root/init.qcom.class_core.sh:recovery/root/init.qcom.class_core.sh \
+    $(LOCAL_PATH)/root/init.qcom.class_main.sh:recovery/root/init.qcom.class_main.sh \
+    $(LOCAL_PATH)/root/init.qcom.ril.path.sh:recovery/root/init.qcom.ril.path.sh \
+    $(LOCAL_PATH)/root/init.qcom.sh:recovery/root/init.qcom.sh \
+    $(LOCAL_PATH)/root/init.qcom.unicorn-dpi.sh:recovery/root/init.qcom.unicorn-dpi.sh \
+    $(LOCAL_PATH)/root/init.qcom.usb.sh:recovery/root/init.qcom.usb.sh \
+    $(LOCAL_PATH)/root/nv_set:recovery/root/nv_set \
+    $(LOCAL_PATH)/root/rmt_storage_recovery:recovery/root/rmt_storage_recovery
+
 
 $(call inherit-product, build/target/product/full.mk)
 
